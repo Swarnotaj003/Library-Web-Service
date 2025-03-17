@@ -60,6 +60,10 @@ type Book {
 ## The Client (Frontend)
 The frontend is designed as a **single-page application**, featuring the following *previews*:
 
-![Page-1](image.png)
+**Preview-1**
 
-![Page-2](image-1.png)
+![image](https://github.com/user-attachments/assets/d16edd56-b805-4977-b268-82f59b738c75)
+
+**Preview-2**
+
+![image](https://github.com/user-attachments/assets/78714687-3193-4c3d-be04-efe3195ea7c9)
