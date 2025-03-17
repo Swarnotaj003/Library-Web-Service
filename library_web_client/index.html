@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Web Service</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Library Web Service!</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="author-section">
+                <h2>Our Authors</h2>
+    
+                <div class="search-add-container">
+                    <div>
+                        <h3>Search authors</h3>
+                        <input type="number" name="authorId" placeholder="Enter author ID..." required>
+                        <button type="button">Search</button>
+                        <div id="author-search-result"></div>
+                    </div>
+                    
+                    <div>
+                        <h3>Add a new author</h3>
+                        <input type="text" name="authorName" placeholder="Enter author's name..." required>
+                        <button type="button">+ Add</button>
+                    </div>
+                </div>
+    
+                <h3>All authors</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th><th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody id="author-list"></tbody>
+                </table>
+            </div>
+    
+            <div id="book-section">
+                <h2>Our Books</h2>
+    
+                <div class="search-add-container">
+                    <div>
+                        <h3>Search books</h3>
+                        <input type="number" name="bookId" placeholder="Enter book ID..." required>
+                        <button type="button">Search</button>
+                        <div id="book-search-result"></div>
+                    </div>
+        
+                    <div>
+                        <h3>Add a new book</h3>
+                        <div class="add-book-inputs">
+                            <input type="text" name="bookTitle" placeholder="Enter book title..." required>
+                            <input type="number" name="pageCount" placeholder="Enter page count...">
+                            <input type="number" name="authorId" placeholder="Enter author ID..." required>
+                            <button type="button">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <h3>All books</h3>
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th><th>Title</th><th>Page-count</th><th>Author</th><th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            <p>
+              &copy; <time datetime="2025">2025</time> com.example.library_web. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

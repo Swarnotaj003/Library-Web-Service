@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+header {
+    background: #1f1f1f; /* Darker header background */
+    color: #ffffff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2, h3 {
+    color: #ffffff; /* White headings */
+}
+
+/* Main Content */
+.container {
+    display: flex; /* Use flexbox for the main content */
+    justify-content: space-between; /* Space between sections */
+    margin: 20px; /* Margin for spacing */
+}
+
+/* Author and Book Sections */
+#author-section, #book-section {
+    margin: 0 10px; /* Margin between sections */
+    padding: 20px; /* Padding inside each section */
+    background: #1e1e1e; /* Dark background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    min-width: 300px; /* Minimum width for responsiveness */
+}
+
+#author-section {
+    flex: 1;
+}
+
+#book-section {
+    flex: 2;
+}
+
+/* Author Section */
+/* Flex container for search and add sections */
+#author-section > .search-add-container {
+    display: flex; /* Use flexbox for the search and add sections */
+    justify-content: space-between; /* Space between search and add */
+    margin-bottom: 20px; /* Space below the search and add sections */
+    flex-direction: column;
+}
+
+/* Adjusting the search and add inputs */
+#author-section > .search-add-container > div {
+    flex: 1; /* Allow both sections to grow equally */
+    margin-right: 10px; /* Space between search and add sections */
+}
+
+#author-section > .search-add-container > div:last-child {
+    margin-right: 0; /* Remove margin from the last child */
+}
+
+/* Book Section */
+#book-section {
+    display: flex; /* Use flexbox for the book section */
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Aligning Items in Sections */
+h3 {
+    margin-top: 20px; /* Add space above each section heading */
+}
+
+/* New Flexbox for Search and Add Sections */
+#book-section > h3:nth-of-type(1),
+#book-section > h3:nth-of-type(2) {
+    display: inline-block; /* Allow headings to be inline */
+    width: 48%; /* Set width for each section */
+    margin: 0; /* Remove default margin */
+}
+
+#book-section > input[type="number"],
+#book-section > button {
+    width: 100%; /* Full width for inputs and buttons */
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs/buttons */
+    border: 1px solid #444; /* Darker border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333; /* Dark input background */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Flex container for search and add sections */
+#book-section > .search-add-container {
+    display: flex; /* Use flexbox for the search and add sections */
+    justify-content: space-between; /* Space between search and add */
+    margin-bottom: 20px; /* Space below the search and add sections */
+}
+
+/* Adjusting the search and add inputs */
+#book-section > .search-add-container > div {
+    flex: 1; /* Allow both sections to grow equally */
+    margin-right: 10px; /* Space between search and add sections */
+}
+
+#book-section > .search-add-container > div:last-child {
+    margin-right: 0; /* Remove margin from the last child */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width for tables */
+    border-collapse: collapse;
+    margin-top: 20px; /* Space above the table */
+    background-color: #1e1e1e; /* Dark table background */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444; /* Darker border for table rows */
+}
+
+th {
+    background-color: #005f73; /* Blue background for table headers */
+    color: #ffffff; /* White text for headers */
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #333; /* Darker hover effect for table rows */
+}
+
+/* Aligning Items in Sections */
+h3 {
+    margin-top: 20px; /* Add space above each section heading */
+}
+
+/* Input and Button Styles */
+input[type="text"],
+input[type="number"],
+button {
+    width: 100%; /* Full width for inputs and buttons */
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs/buttons */
+    border: 1px solid #444; /* Darker border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333; /* Dark input background */
+    color: #e0e0e0; /* Light text color */
+}
+
+button {
+    background-color: #005f73; /* Blue background for buttons */
+    color: white; /* White text for buttons */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007a8c; /* Brighter blue on hover */
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.action-buttons > button {
+    margin: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background: #1f1f1f; 
+    color: white; 
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: white; 
+    text-decoration: none;
+}
+
+footer .copyright {
+    margin-top: 10px;
+}

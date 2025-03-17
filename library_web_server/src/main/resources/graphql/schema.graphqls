@@ -1,0 +1,42 @@
+# To fetch data
+type Query {
+	authors: [Author]
+	authorById(id: ID!): Author
+	
+	books: [Book]
+	bookById(id: ID!): Book
+}
+
+# To modify data
+type Mutation {
+	addAuthor(author: AuthorInput!): Author
+
+	addBook(book: BookInput!): Book
+	updateBook(id: ID!, book: BookInput!): Book
+	deleteBook(id: ID!): Boolean
+}
+
+# Input type definition
+# '!' indicates required field
+input BookInput {
+	title: String!	
+	pageCount: Int
+	authorId: ID!
+}
+
+input AuthorInput {
+	name: String!
+}
+
+type Author {
+	id: ID!		
+	name: String!
+	books: [Book]
+}
+
+type Book {
+	id: ID!
+	title: String!
+	pageCount: Int
+	author: Author!
+}
